@@ -10,5 +10,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="sonarqubetestFlow" doc:id="e9d88e9d-7c64-4f49-8730-797023093dc4" >
 		<http:listener doc:name="Listener" doc:id="b5f97ac5-7a94-4ffd-aa99-b83c567ddb5d" config-ref="HTTP_Listener_config" path="/sonarqube"/>
 		<set-payload value="SonarQube Test!!" doc:name="Set Payload" doc:id="0ec226c0-4c1a-43d7-9568-c5d6a53b5b2b" />
+		<logger level="INFO" doc:name="Logger" doc:id="9822a18c-ae16-4899-8978-af7a70b5e258" />
 	</flow>
 </mule>
